@@ -23,7 +23,7 @@ if connectionType == "1":
     file = open("config-output- " + connectionInfo["host"] + ".txt", "w")
     file.write(output)
     file.close()
-    print("*** Config Saved ***)
+    print("*** Configuration Saved ***)
 elif connectionType == "2":
     connectionInfo["device_type"] = "cisco_ios_telnet"
     session = netmiko.ConnectionHandler(**connectionInfo)
